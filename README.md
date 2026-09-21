@@ -192,7 +192,7 @@ The experimental density matrices are manually inserted into the `*_FidCal.m` sc
 
 4. X. Yang *et al.*, "Assessing three closed-loop learning algorithms by searching for high-quality quantum control pulses", *Phys. Rev. A*, 102, 2020. [doi:10.1103/PhysRevA.102.062605](https://doi.org/10.1103/PhysRevA.102.062605)
 
-## Authorship
+## Author
 
 **João Pedro Verneck** — Supervision: Prof.ª Maria Helena Almeida Vieira Alberto
 
