@@ -37,7 +37,7 @@ There are two types of scripts:
 ```text
    *_OP.m  ──►  .json file  ──►  SPINQ Gemini Lab  ──►  experimental density matrix
 
-(optimization)   (pulses)    (execution, 5 repetitions)             │
+(optimization)    (pulses)    (execution, 5 repetitions)             │
                                                                     ▼
                                                         copy to *_FidCal.m  ──►  fidelity + plots
 ```
