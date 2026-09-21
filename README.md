@@ -17,7 +17,6 @@ The work uses a 2-qubit NMR quantum computer (**¹H** and **³¹P**, dimethyl me
 ## Repository Structure
 
 ```text
-.
 
 ├── Quantum_Technology.pdf   # Complete report
 ├── FidCal.m                 # Fidelity and plots: hard pulses (theoretical vs. experimental)
@@ -39,7 +38,7 @@ There are two types of scripts:
    *_OP.m  ──►  .json file  ──►  SPINQ Gemini Lab  ──►  experimental density matrix
 
   (optimization)    (pulses)          (execution, 5 repetitions)             │
-                                                                               ▼
+                                                                             ▼
                                                      copy to *_FidCal.m  ──►  fidelity + plots
 ```
 
@@ -59,7 +58,7 @@ Defined at the top of the `*_OP.m` scripts, using the values measured in the rep
 
 | Symbol   | Value    | Meaning                                                                     |
 | -------- | -------- | --------------------------------------------------------------------------- |
-| `J`      | 695.8 Hz | ¹H–³¹P scalar coupling constant (Eq. 15)                                    |
+| `J`      | 695.8 Hz | ¹H – ³¹P scalar coupling constant (Eq. 15)                                  |
 | `w1_max` | 6250 Hz  | Maximum Rabi frequency (measured: 6257.66 Hz for ¹H and 6187.98 Hz for ³¹P) |
 
 Hamiltonian in the rotating frame (zero offsets, exact resonance):
@@ -67,9 +66,9 @@ Hamiltonian in the rotating frame (zero offsets, exact resonance):
 ```text
 H(t) = H₀ + H₁(t)
 
-H₀   = 2π·J · σz⊗σz / 4                   (coupling, = 2πJ·Iz·Iz)
+H₀   = 2π·J · (σz ⊗ σz) / 4 (coupling, = 2πJ·Iz·Iz)
 
-H₁   = 2π·A(t)·w1_max · [cos φ · σx/2 + sin φ · σy/2]   (on each channel)
+H₁   = 2π·A(t)·w1_max · [cos φ · σx/2 + sin φ · σy/2] (on each channel)
 ```
 
 Each segment `k` has a constant Hamiltonian, and the total propagator is the ordered product
