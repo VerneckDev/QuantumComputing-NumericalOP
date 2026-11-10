@@ -17,7 +17,7 @@ The work uses a 2-qubit NMR quantum computer (**¹H** and **³¹P**, dimethyl me
 ## Repository Structure
 
 ```text
-
+QuantumComputing-NumericalOP/
 ├── Quantum_Technology.pdf   # Complete report
 ├── FidCal.m                 # Fidelity and plots: hard pulses (theoretical vs. experimental)
 ├── SMP_OP.m                 # SMP optimization -> generates JSON for the equipment
